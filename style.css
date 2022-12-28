@@ -368,6 +368,7 @@ section .button button:hover{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  gap:20px;
 }
 
 .achievementsworkexperiences .container{
@@ -857,6 +858,7 @@ section .button button:hover{
   flex-direction: row;
   align-items: center;
   justify-content:space-around;
+  gap:20px;
 }
   
 
@@ -1936,7 +1938,6 @@ footer .text span a:hover{
   }
   .flex-container3{
     flex-direction: column;
-    justify-content:space-between;
   }
 }
 @media (max-width: 900px) {
@@ -2009,7 +2010,6 @@ footer .text span a:hover{
   }
   .flex-container3{
     flex-direction: column;
-    justify-content:space-between;
   }
   .contacts .media-icons a{
     font-size: 25px;
