@@ -368,17 +368,7 @@ section .button button:hover{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-  /* grid-gap: 20px; */
 }
-/* .grid-container2 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-column-gap: 20px; 
-}*/
 
 .achievementsworkexperiences .container{
   position: relative;
@@ -867,8 +857,6 @@ section .button button:hover{
   flex-direction: row;
   align-items: center;
   justify-content:space-around;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;  */
 }
   
 
@@ -1620,14 +1608,6 @@ section .button button:hover{
   width: 320px;
 }
 
-
-/* .grid-container4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
-} */
 /*card8*/
 .projects .container .card8 {
   position: relative;
@@ -1956,6 +1936,7 @@ footer .text span a:hover{
   }
   .flex-container3{
     flex-direction: column;
+    justify-content:space-around;
   }
 }
 @media (max-width: 900px) {
@@ -2028,6 +2009,7 @@ footer .text span a:hover{
   }
   .flex-container3{
     flex-direction: column;
+    justify-content:space-around;
   }
   .contacts .media-icons a{
     font-size: 25px;
