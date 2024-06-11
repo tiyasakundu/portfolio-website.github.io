@@ -257,6 +257,8 @@ section .content{
 }
 .about .about-details{
   display: flex;
+  /* new addition */
+  flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
 }
@@ -288,17 +290,17 @@ section .title span::after{
   left: 50%;
   transform: translateX(-50%);
 }
-.about .about-details .left{
+/* .about .about-details .left{
   width: 45%;
-}
-.about .left img{
+} */
+/* .about .left img{
   height: 500px;
   width: 300px;
   object-fit: cover;
   border-radius: 12px;
-}
+} */
 .about-details .right{
-  width: 55%;
+  width: 100%;
 }
 section  .topic{
   color: #0D1721;
@@ -472,6 +474,101 @@ section .button button:hover{
   display:inline block;
 }
 
+/* card6*/
+.achievementsworkexperiences .container .card6{
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.achievementsworkexperiences .container .card6 .face{
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.achievementsworkexperiences .container .card6 .face.face1{
+  position: relative;
+  background: #EBEBEB;;
+  display: flex;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.achievementsworkexperiences .container .card6:hover .face.face1{
+  background: #22C787;
+  transform: translateY(0);
+}
+
+.achievementsworkexperiences .container .card6 .face.face1 .content{
+  opacity: 100%;
+  transition: 0.5s;
+}
+
+.achievementsworkexperiences .container .card6:hover .face.face1 .content{
+  opacity: 100%;
+}
+
+.achievementsworkexperiences .container .card6 .face.face1 .content i{
+  height: 50px;
+  width: 50px;
+  background: #22C787;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+  margin: 10px 95px;
+  max-width: 100px;
+}
+
+.achievementsworkexperiences .container .card6 .face.face1 .content h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #0D1721;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 575;
+}
+.achievementsworkexperiences .container .card6:hover  .face.face1 .content h3{
+  color: #fff;
+}
+.achievementsworkexperiences .container .card6 .face.face2{
+  position: relative;
+  background: #EBEBEB;
+  display: flex;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transform: translateY(-100px);
+}
+
+.achievementsworkexperiences .container .card6:hover .face.face2{
+  transform: translateY(0);
+}
+
+.achievementsworkexperiences .container .card6 .face.face2 .content p{
+  margin: 0;
+  padding: 0;
+  color: #0D1721;
+  font-size: 13.7px;
+  display:inline block;
+}
+
+.achievementsworkexperiences .container .card6 .face.face2 .content a{
+  margin: 0;
+  padding: 0;
+  color: #0D1721;
+  font-size: 13.7px;
+  display:inline block;
+}
+
 /*card2*/
 .achievementsworkexperiences .container .card2{
   position: relative;
@@ -576,7 +673,7 @@ section .button button:hover{
 
 .achievementsworkexperiences .container .card3 .face{
   width: 300px;
-  height: 200px;
+  height: 300px;
   transition: 0.5s;
 }
 
@@ -588,7 +685,7 @@ section .button button:hover{
   justify-content: center;
   align-items: center;
   z-index: 1;
-  transform: translateY(100px);
+  transform: translateY(200px);
 }
 
 .achievementsworkexperiences .container .card3:hover .face.face1{
@@ -645,20 +742,23 @@ section .button button:hover{
 .achievementsworkexperiences .container .card3:hover .face.face2{
   transform: translateY(0);
 }
+.achievementsworkexperiences .container .card3:hover  .face.face2 .content h3{
+  font-size: 13.7px
+}
 
 .achievementsworkexperiences .container .card3 .face.face2 .content p{
   margin: 0;
   padding: 0;
   color: #0D1721;
-  font-size: 13.7px;
+  font-size: 12px;
   display:inline block;
 }
 
-.achievementsworkexperiences .container .card3 .face.face2 .content a{
+.achievementsworkexperiences .container .card3 .face.face2 .content em{
   margin: 0;
   padding: 0;
   color: #0D1721;
-  font-size: 13.7px;
+  font-size: 11px;
   display:inline block;
 }
 
@@ -893,7 +993,7 @@ section .button button:hover{
 }
 
 .projects .container .card1:after {
-  content: 'Fasal';
+  content: 'SmartPark';
   position: absolute;
   top: 30%;
   left: -20%;
